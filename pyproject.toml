@@ -1,0 +1,26 @@
+[project]
+name = "flask-elastic"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "ra2dd",email = "user@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flask (>=3.1.0,<4.0.0)",
+    "elasticsearch (>=8.17.1,<9.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
